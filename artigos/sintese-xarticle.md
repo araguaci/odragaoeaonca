@@ -48,7 +48,7 @@ Elo legislativo: **PL 2.780/2024** — R$ 2 bi de fundo garantidor para investid
 ## Fontes por capítulo
 
 - Federal: `dragao-onca-brasil-federal.html` (20 fontes)
-- Goiás: `o-dragao-e-a-onca-goias.html` (36 fontes)
+- Goiás: `dragao-onca-goias.html` (36 fontes)
 - Pará: `dragao-onca-para.html` (15 fontes)
 - Amazonas: `dragao-onca-amazonas.html` (16 fontes)
 - Minas Gerais: `dragao-onca-minas-gerais.html` (13 fontes)
