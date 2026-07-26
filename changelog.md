@@ -7,6 +7,14 @@ Formato: data (ISO) → resumo → arquivos de fonte.
 
 ---
 
+## 2026-07-25 (i) — crédito Artes do Sul nos rodapés
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Alterado** | 14× `dragao-onca-*.html` + `index.html` + `odragaoeaonca.html` | Rodapé: **Desenvolvido por [Artes do Sul](https://www.artesdosul.com/)** (link + CSS `.footdev`; nos dossiês com `flinks`, também no grupo de links). |
+
+---
+
 ## 2026-07-25 (h) — síntese v1 com novos artefatos
 
 | Ação | Arquivo | Descrição |
