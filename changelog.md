@@ -7,6 +7,14 @@ Formato: data (ISO) → resumo → arquivos de fonte.
 
 ---
 
+## 2026-07-25 (h) — síntese v1 com novos artefatos
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Alterado** | `dragao-onca-sintese.html` | Tese com nuance (BA, SP, PR, RS/ES, Diplomático); KPIs 9 UFs / ~R$78bi / CEBC; quadro 9 estados; gráficos e alertas atualizados; horizontes marcando entregas 25/jul; ponte para T-243. |
+
+---
+
 ## 2026-07-25 (g) — nav scroll-spy nos artefatos novos
 
 | Ação | Arquivo | Descrição |
