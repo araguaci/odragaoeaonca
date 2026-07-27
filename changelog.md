@@ -7,6 +7,14 @@ Formato: data (ISO) → resumo → arquivos de fonte.
 
 ---
 
+## 2026-07-27 (i) — Fix cards do timeline hub (âncoras aninhadas)
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Corrigido** | `timeline/index.html` | Cards 0–17: `div.card` + `a.card-main` + `#âncora` no topo — remove `<a>` dentro de `<a>` que quebrava layout/clique. |
+
+---
+
 ## 2026-07-27 (h) — Timelines condensadas + hub reordenado
 
 | Ação | Arquivo | Descrição |
