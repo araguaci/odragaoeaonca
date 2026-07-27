@@ -22,11 +22,14 @@ odragaoeaonca/
 ├── artigos/                    # 18 X Articles (.md) + heroes 1024×600
 ├── public/                     # Capas webp + relatórios estaduais (MD/PDF)
 ├── docs/                       # Dossiês-fonte, imagens, notas
+├── timeline/                   # Hub por ordem de importância + âncoras (#rj, #t-245…)
 ├── CATALAGO.md                 # Índice + prompts hero completos por capítulo
 ├── dragao-onca-*.html          # 17 dossiês interativos (+ index hub)
 ├── index.html                  # Dashboard (ordem CEBC + eixos)
 └── vercel.json                 # Deploy estático (@vercel/static)
 ```
+
+**Índice inteligente (âncoras):** [`timeline/`](timeline/) — ordem README 0–17; deep-links `timeline/#amapa`, `timeline/#t-245`, `timeline/#rj`.
 
 ---
 

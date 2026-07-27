@@ -7,6 +7,14 @@ Formato: data (ISO) → resumo → arquivos de fonte.
 
 ---
 
+## 2026-07-27 (g) — Timeline hub: ordem de importância + âncoras
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Reescrito** | `timeline/index.html` | 18 artefatos (0–17); índice inteligente sticky; âncoras `#federal`…`#rj`; aliases UF/T-ID; links dossiês + X Articles. |
+
+---
+
 ## 2026-07-27 (f) — Hub Jekyll: ordem de importância nos Capítulos Temáticos
 
 A página `/dragao-onca/` (layout Chirpy) passou a listar os 18 posts **T-228→T-245** na mesma ordem de leitura deste README (0 Hub → 17 T-245), em vez de data decrescente.
