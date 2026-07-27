@@ -7,6 +7,17 @@ Formato: data (ISO) → resumo → arquivos de fonte.
 
 ---
 
+## 2026-07-27 (h) — Timelines condensadas + hub reordenado
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Criado** | `scripts/generate_timeline_pages.py` | Extrai KPIs + eventos dos dossiês → `timeline/timeline-*.html`. |
+| **Gerado** | 17× `timeline/timeline-*.html` | Capítulos 1–17 (Federal→RJ), series-nav ordem de importância. |
+| **Reescrito** | `index.html` | Ordem 1–17 + âncoras; links Dossiê + Timeline por card. |
+| **Atualizado** | `timeline/index.html` | Cards apontam às timelines condensadas. |
+
+---
+
 ## 2026-07-27 (g) — Timeline hub: ordem de importância + âncoras
 
 | Ação | Arquivo | Descrição |

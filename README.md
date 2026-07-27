@@ -29,7 +29,8 @@ odragaoeaonca/
 └── vercel.json                 # Deploy estático (@vercel/static)
 ```
 
-**Índice inteligente (âncoras):** [`timeline/`](timeline/) — ordem README 0–17; deep-links `timeline/#amapa`, `timeline/#t-245`, `timeline/#rj`.
+**Índice inteligente (âncoras):** [`timeline/`](timeline/) — ordem README 0–17; deep-links `timeline/#amapa`, `timeline/#t-245`, `timeline/#rj`.  
+**Timelines condensadas:** `timeline/timeline-{slug}.html` (geradas de `dragao-onca-*.html` via `scripts/generate_timeline_pages.py`).
 
 ---
 

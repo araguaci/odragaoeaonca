@@ -20,6 +20,8 @@ ARTIFACTS = [
     ("/dragao-onca-pl2780.html", "13 · T-235 · Legislativo", "📜 PL 2.780/2024", "FGAM R$ 2 bi · minerais críticos"),
     ("/dragao-onca-braco-juridico.html", "14 · T-234 · Transversal", "⚖️ Braço Jurídico", "STF, marco temporal, ADI 7919"),
     ("/dragao-onca-sintese-final-cross-state.html", "15 · T-243 · Fechamento", "🎯 Síntese final · 9 UFs", "Onde a tese confirma, enfraquece ou falha"),
+    ("/dragao-onca-amapa.html", "16 · T-244 · Controle", "🇧🇷 AP Amapá", "Amazonbai + Chevron/CNPC federal"),
+    ("/dragao-onca-rj.html", "17 · T-245 · Alto", "🇧🇷 RJ Rio de Janeiro", "Açu/CMPort + Castro/Hikvision"),
 ]
 
 CSS = """
@@ -55,6 +57,8 @@ FILES = [
     "dragao-onca-pl2780.html",
     "dragao-onca-braco-juridico.html",
     "dragao-onca-sintese-final-cross-state.html",
+    "dragao-onca-amapa.html",
+    "dragao-onca-rj.html",
 ]
 
 SECTION_RE = re.compile(
