@@ -11,6 +11,7 @@ _site
 # RubyGems
 *.gem
 *.rar
+*.pdf
 
 # NPM dependencies
 node_modules

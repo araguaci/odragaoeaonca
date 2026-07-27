@@ -1,24 +1,25 @@
 from pathlib import Path
 import re
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 
 ARTIFACTS = [
-    ("/odragaoeaonca", "0 · Hub", "Índice da série", "Mapa completo + tese · 16 dossiês"),
+    ("./", "0 · Hub", "Índice da série", "Mapa completo + tese · hub + dossiês"),
     ("/dragao-onca-brasil-federal.html", "1 · T-229 · Crítico", "🇧🇷 BR Brasil (Federal)", "Pano de fundo 1993–2026 · Doria–Sinovac"),
     ("/dragao-onca-braco-diplomatico.html", "2 · T-236 · Crítico", "🌐 Braço Diplomático", "WAICO + Serra Verde + alinhamento duplo"),
     ("/dragao-onca-sao-paulo.html", "3 · T-238 · Alto", "🇧🇷 SP São Paulo", "Variante “mercado” — CRRC/COFCO"),
     ("/dragao-onca-goias.html", "4 · T-228 · Alto", "🇧🇷 GO Goiás", "Pivô China→EUA/Japão, terras raras"),
-    ("/dragao-onca-minas-gerais.html", "5 · T-232 · Alto", "🇧🇷 MG Minas Gerais", "Contraste ocidental (Sigma/Nasdaq)"),
+    ("/dragao-onca-minas-gerais.html", "5 · T-232 · Alto", "🇧🇷 MG Minas Gerais", "Sigma + China paralela (CRRC/Midea/BYD)"),
     ("/dragao-onca-bahia.html", "6 · T-237 · Alto", "🇧🇷 BA Bahia", "Caso de controle — padrão falha"),
     ("/dragao-onca-para.html", "7 · T-230 · Alto", "🇧🇷 PA Pará", "Ferrovia + COP30 + 39 mortes"),
     ("/dragao-onca-amazonas.html", "8 · T-231 · Alto", "🇧🇷 AM Amazonas", "Taboca/MPF/PF — mais grave"),
     ("/dragao-onca-parana.html", "9 · T-239 · Médio", "🇧🇷 PR Paraná", "Coordenação estado–união (TCP)"),
-    ("/dragao-onca-rs-es-ranking-nacional.html", "10 · T-240–242 · Médio", "🇧🇷 RS · ES · Ranking CEBC", "Par de controle + ranking nacional"),
-    ("/dragao-onca-sintese.html", "11 · T-233 · Consolidação", "📊 Síntese v1", "5 UFs originais · soberania do governador"),
-    ("/dragao-onca-pl2780.html", "12 · T-235 · Legislativo", "📜 PL 2.780/2024", "FGAM R$ 2 bi · minerais críticos"),
-    ("/dragao-onca-braco-juridico.html", "13 · T-234 · Transversal", "⚖️ Braço Jurídico", "STF, marco temporal, ADI 7919"),
-    ("/dragao-onca-sintese-final-cross-state.html", "14 · T-243 · Fechamento", "🎯 Síntese final · 9 UFs", "Onde a tese confirma, enfraquece ou falha"),
+    ("/dragao-onca-rio-grande-do-sul.html", "10 · T-240 · Médio", "🇧🇷 RS Rio Grande do Sul", "CEEE-T + cortejo GWM sem captura"),
+    ("/dragao-onca-rs-es-ranking-nacional.html", "11 · T-240–242 · Médio", "🇧🇷 RS · ES · Ranking CEBC", "Par de controle + ranking nacional"),
+    ("/dragao-onca-sintese.html", "12 · T-233 · Consolidação", "📊 Síntese v1", "5 UFs originais · soberania do governador"),
+    ("/dragao-onca-pl2780.html", "13 · T-235 · Legislativo", "📜 PL 2.780/2024", "FGAM R$ 2 bi · minerais críticos"),
+    ("/dragao-onca-braco-juridico.html", "14 · T-234 · Transversal", "⚖️ Braço Jurídico", "STF, marco temporal, ADI 7919"),
+    ("/dragao-onca-sintese-final-cross-state.html", "15 · T-243 · Fechamento", "🎯 Síntese final · 9 UFs", "Onde a tese confirma, enfraquece ou falha"),
 ]
 
 CSS = """
@@ -48,6 +49,7 @@ FILES = [
     "dragao-onca-para.html",
     "dragao-onca-amazonas.html",
     "dragao-onca-parana.html",
+    "dragao-onca-rio-grande-do-sul.html",
     "dragao-onca-rs-es-ranking-nacional.html",
     "dragao-onca-sintese.html",
     "dragao-onca-pl2780.html",

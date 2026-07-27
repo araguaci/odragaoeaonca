@@ -7,6 +7,163 @@ Formato: data (ISO) → resumo → arquivos de fonte.
 
 ---
 
+## 2026-07-27 (f) — Hub Jekyll: ordem de importância nos Capítulos Temáticos
+
+A página `/dragao-onca/` (layout Chirpy) passou a listar os 18 posts **T-228→T-245** na mesma ordem de leitura deste README (0 Hub → 17 T-245), em vez de data decrescente.
+
+| Ação | Arquivo (repositório principal) | Descrição |
+|------|----------------------------------|-----------|
+| **Criado** | `_data/dragao_onca_thematic_order.yml` | Lista `timeline_id` 229, 236, 238, 228… 245. |
+| **Alterado** | `_layouts/dragao-onca.html` | Seção **Capítulos Temáticos** usa ordem de importância; timeline cronológica inalterada. |
+
+Detalhes de tags `p0x` e build: [`changelog.md`](../changelog.md) (entrada 2026-07-27).
+
+---
+
+## 2026-07-27 (e) — Sínteses refeitas (11 UFs)
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Reescrito** | `dragao-onca-sintese.html` | v1 T-233: 11 UFs, KPIs, comparativo AP/RJ, alertas, horizontes SC/MA. |
+| **Reescrito** | `dragao-onca-sintese-final-cross-state.html` | T-243: 10 mecanismos; tabela 11 estados; RS Day **1756**; lacunas CADE/GACC. |
+| **Reescrito** | `artigos/sintese-xarticle.md` · `sintese-final-xarticle.md` | X Articles alinhados; tweet 11 estados / 10 mecanismos. |
+
+Corpus referenciado: **T-228→T-245** · **142 posts** · **17 dossiês HTML**.
+
+---
+
+## 2026-07-27 (d) — Hero RJ (T-245)
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Criado** | `artigos/rj-xarticle-hero.png` | Hero 1024×600 — Açu + vigilância. |
+| **Atualizado** | `public/dragao-onca-rj.webp` | Capa web exportada do hero. |
+| **Atualizado** | `README.md` · `CATALAGO.md` | Path hero RJ; pendência fechada. |
+
+---
+
+## 2026-07-27 (c) — README alinhado aos 18 artigos
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Atualizado** | `README.md` | Ordem 0–17; índice X Articles completo; promo RS + RJ; calendário ~18 dias; corpus T-228→T-245 / 17 HTML + 18 X Articles; ponte `CATALAGO.md`. |
+
+---
+
+## 2026-07-27 (b) — Catálogo completo + prompts hero
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Reescrito** | `CATALAGO.md` | 18 entradas por ordem de importância; prompts completos (base + capítulo) para todos; atalho UFs; pendências hero RJ/MG/RS. |
+
+---
+
+## 2026-07-27 (a) — X Article Amapá (T-244) + hero
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Atualizado** | `artigos/amapa-xarticle.md` | X Article Cap. 16: Amazonbai 15 mil t, GACC pendente, Chevron/CNPC R$582,2mi; URL vercel; contraste Bahia. |
+| **Criado** | `artigos/amapa-xarticle-hero.png` | Hero share card X (1024×600, wide 5:2). |
+| **Atualizado** | `README.md` | Hero path no índice X Articles. |
+
+---
+
+## 2026-07-26 (h) — Capítulo Rio de Janeiro T-245 + IDs 1760–1762
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Processado** | batches RJ 1760–1762 + T-245 | CMPort/Vast, Castro/Hikvision, CNOOC/PetroChina |
+| **Criado** | `dragao-onca-rj.html` | Dossiê Cap. 17 (OG tags + conteúdo editorial) |
+| **Criado** | `artigos/rj-xarticle.md` | X Article T-245 |
+| **Sync** | lawfare.json · claude.ai-corpus-ids-sync.json | main **1762** (next 1763) · thematic **245** (next 246) |
+
+---
+
+## 2026-07-26 (g) — Capítulo Amapá T-244 + IDs 1757–1759
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Processado** | batches amapa + T-244 | Amazonbai/açaí (1757–1758), Chevron/CNPC (1759), capítulo controle |
+| **Patch** | `patch-id1100-margem-equatorial-fza59.json` | Correção parser id_1100 (FZA-M-59 — contexto Margem Equatorial) |
+| **Criado** | `dragao-onca-amapa.html` | Dossiê interativo Cap. 16 |
+| **Criado** | `artigos/amapa-xarticle.md` | X Article T-244 |
+| **Sync** | lawfare.json · claude.ai-corpus-ids-sync.json | main **1759** (next 1760) · thematic **244** (next 245) |
+
+---
+
+## 2026-07-26 (f) — X Article T-243 (síntese final)
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Criado** | `artigos/sintese-final-xarticle.md` | Fechamento tipológico 8 mecanismos; releitura MG/RS; confirma/enfraquece/contraria. |
+| **Criado** | `artigos/sintese-final-xarticle-hero.png` | Hero share card X (1024×600, wide 5:2). |
+| **Atualizado** | `README.md` · `dragao-onca-sintese-final-cross-state.html` | Índice X Article; lacuna T-243 fechada. |
+
+---
+
+## 2026-07-26 (e) — Síntese final T-243: releitura MG + RS
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Atualizado** | `dragao-onca-sintese-final-cross-state.html` | KPIs, correções metodológicas, tabela, tipologias 6–7 (CEEE-T; vitrine+China), tese, lacunas, mapa com links; alinhado à síntese v1 26/jul. |
+| **Atualizado** | `scripts/updater_series_nav.py` | Card MG: “Sigma + China paralela”. |
+
+---
+
+## 2026-07-26 (d) — Síntese v1: releitura MG + RS
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Atualizado** | `dragao-onca-sintese.html` | Tese/KPIs/quadro/gráficos/alertas: MG deixa “sem China” (CRRC/Midea/BYD ~R$1,4bi+); RS com CEEE-T R$2,67bi + derrota GWM; soma ~R$81bi; links ao dossiê RS dedicado. |
+| **Atualizado** | `artigos/sintese-xarticle.md` | Mesma releitura MG/RS no X Article da síntese. |
+
+---
+
+## 2026-07-26 (c) — Dossiê RS (T-240) no shell da série
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Reescrito** | `dragao-onca-rio-grande-do-sul.html` | Cap. 13 mobile-first: shell Bahia, scroll-spy, KPIs, simetria, series-nav, `#gotop`, copyAll, safe-area; CEEE-T + GWM 1735–1737. |
+| **Atualizado** | `scripts/updater_series_nav.py` | Insere RS como ordem 10; renumera RS/ES→15. |
+| **Atualizado** | `index.html` · `README.md` | Card RS aponta ao dossiê dedicado. |
+
+---
+
+## 2026-07-26 (b) — Referência de qualidade de artefato
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Criado** | `docs/qualidade-artefato-referencia.md` | Benchmark Bahia (T-237); ranking por função; checklist 12 critérios; recomendações A/B/C; prompts completo e de auditoria para artefatos ≥ qualidade Bahia. |
+
+---
+
+## 2026-07-26 (a) — X Article RS · ES · Ranking CEBC
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Atualizado** | `artigos/rs-es-ranking-xarticle.md` | X Article T-240–242: par de controle GWM, logística vs diplomacia, ranking CEBC US$85,5bi / 355 projetos. |
+| **Criado** | `artigos/rs-es-ranking-xarticle-hero.png` | Hero share card X (1024×600, composição wide 5:2). |
+
+---
+
+## 2026-07-25 (k) — X Article Paraná
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Atualizado** | `artigos/parana-xarticle.md` | X Article T-239: CMPort 90%, acordos gêmeos APPA/MPor (3–5/nov/2025), contraste SP, nota anti-confirmation-bias. |
+| **Criado** | `artigos/parana-xarticle-hero.png` | Hero share card X (1024×600, composição wide 5:2). |
+
+---
+
+## 2026-07-25 (j) — X Article síntese v1
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Atualizado** | `artigos/sintese-xarticle.md` | X Article T-233 alinhado à síntese de 9 UFs: confirma / enfraquece / contraria; KPIs CEBC; ponte T-243. |
+| **Criado** | `artigos/sintese-xarticle-hero.png` | Hero share card X (1024×600, composição wide 5:2). |
+
+---
+
 ## 2026-07-25 (i) — crédito Artes do Sul nos rodapés
 
 | Ação | Arquivo | Descrição |
@@ -48,7 +205,23 @@ Formato: data (ISO) → resumo → arquivos de fonte.
 
 ---
 
-## 2026-07-25 (d) — README + promo X.com
+## 2026-07-26 (e) — OG Graph + links dossiê nos capítulos T-*
+
+| Ação | Arquivo | Descrição |
+|------|---------|-----------|
+| **Alterado** | `odragaoeaonca/dragao-onca-*.html` | OG/Twitter em 9 dossiês que faltavam; RS normalizado para gosurf.site |
+| **Alterado** | `_posts/dragao-onca/2026-07-24-t*.md` | Bloco **Link para dossiê completo:** → gosurf.site (16 capítulos) |
+| **Criado** | `scripts/apply_dragao_onca_og_and_dossier_links.py` | Automação reutilizável |
+
+---
+
+| Ação | Descrição |
+|------|-----------|
+| **Batch** | 8 entradas: GWM critérios ES (1749), MG CRRC/Midea/BYD/Wondfo (1750–1755), RS Day Pequim (1756) |
+| **Posts** | +8 em `_posts/dragao-onca/` (134 total) |
+| **Sync** | `lawfare.json` + `claude.ai-corpus-ids-sync.json` → last_id **1756** |
+
+---
 
 | Ação | Arquivo | Descrição |
 |------|---------|-----------|

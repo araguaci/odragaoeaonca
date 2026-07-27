@@ -3,7 +3,7 @@
 Investigação documental sobre captura econômico-eleitoral no federalismo brasileiro: como governadores negociam ativos estratégicos com capital estrangeiro (chinês, americano, europeu, japonês, sul-coreano) e convertem esses ativos em capital político pessoal — frequentemente sem que o benefício chegue à população das regiões afetadas.
 
 **Licença:** CC0 1.0 — Domínio Público · série *lawfare-timeline*  
-**Hub:** https://odragaoeaonca.vercel.app/ · **Corpus:** T-228 → T-243 · atualizado 25/jul/2026
+**Hub:** https://odragaoeaonca.vercel.app/ · **Corpus:** T-228 → T-245 · atualizado 27/jul/2026
 
 ---
 
@@ -11,7 +11,7 @@ Investigação documental sobre captura econômico-eleitoral no federalismo bras
 
 > **Nenhum vetor — chinês, americano, europeu ou sul-coreano — chega ao beneficiário final.**
 
-A União negocia marcos amplos (tratados, MoUs, cúpulas). Quem assina o contrato específico, enfrenta a comunidade atingida e responde eleitoralmente é o **governador estadual** — com nuance (T-243): o padrão confirma-se em extração mineral com custo ambiental local; enfraquece em infraestrutura/manufatura por mercado (SP, PR); contraria-se na Bahia (captura com benefício) e no par RS/ES (logística > diplomacia).
+A União negocia marcos amplos (tratados, MoUs, cúpulas). Quem assina o contrato específico, enfrenta a comunidade atingida e responde eleitoralmente é o **governador estadual** — com nuance (T-243–245): confirma-se em extração mineral com custo local e em P09 eleitoral (GO; MG variante; RJ/Castro em vigilância); enfraquece em mercado/continuidade (SP, PR; Açu/CMPort no RJ); contraria-se na Bahia (TIR↓), no RS/ES (CEEE-T ≠ GWM; logística > diplomacia) e no Amapá (controle açaí + petróleo federal sem governador).
 
 ---
 
@@ -19,10 +19,11 @@ A União negocia marcos amplos (tratados, MoUs, cúpulas). Quem assina o contrat
 
 ```
 odragaoeaonca/
-├── artigos/                    # X Articles (.md) + heroes 1024×600
+├── artigos/                    # 18 X Articles (.md) + heroes 1024×600
 ├── public/                     # Capas webp + relatórios estaduais (MD/PDF)
 ├── docs/                       # Dossiês-fonte, imagens, notas
-├── dragao-onca-*.html          # 16 dossiês interativos
+├── CATALAGO.md                 # Índice + prompts hero completos por capítulo
+├── dragao-onca-*.html          # 17 dossiês interativos (+ index hub)
 ├── index.html                  # Dashboard (ordem CEBC + eixos)
 └── vercel.json                 # Deploy estático (@vercel/static)
 ```
@@ -31,7 +32,7 @@ odragaoeaonca/
 
 ## Ordem de importância / assunto
 
-Publicar nesta sequência (≤2 posts/dia). **Eixos transversais primeiro** → **UFs pelo ranking CEBC 2007-2025** → **sínteses por último**.
+Publicar nesta sequência (≤2 posts/dia). **Eixos transversais primeiro** → **UFs** → **sínteses / fechamentos** → **casos-controle e compostos**.
 
 | Ordem | Prioridade | Artefato | Assunto | T-ID |
 |------:|------------|----------|---------|------|
@@ -40,17 +41,22 @@ Publicar nesta sequência (≤2 posts/dia). **Eixos transversais primeiro** → 
 | 2 | Crítico | Braço Diplomático | WAICO + Serra Verde + alinhamento duplo | T-236 |
 | 3 | Alto | São Paulo | Variante “mercado” — CRRC/COFCO | T-238 |
 | 4 | Alto | Goiás | Pivô China→EUA/Japão, terras raras | T-228 |
-| 5 | Alto | Minas Gerais | Contraste ocidental (Sigma/Nasdaq) | T-232 |
-| 6 | Alto | Bahia | Caso de controle — padrão falha | T-237 |
+| 5 | Alto | Minas Gerais | Sigma + China paralela (CRRC/Midea/BYD) | T-232 |
+| 6 | Alto | Bahia | Caso de controle — TIR↓ | T-237 |
 | 7 | Alto | Pará | Ferrovia + COP30 + 39 mortes | T-230 |
 | 8 | Alto | Amazonas | Taboca/MPF/PF — mais grave | T-231 |
 | 9 | Médio | Paraná | Coordenação estado–união (TCP) | T-239 |
-| 10 | Médio | RS · ES · Ranking | Par de controle + CEBC | T-240–242 |
-| 11 | Consolidação | Síntese v1 | 5 UFs originais | T-233 |
-| 12 | Legislativo | PL 2.780/2024 | FGAM R$ 2 bi | T-235 |
-| 13 | Transversal | Braço Jurídico | STF, marco temporal, ADI 7919 | T-234 |
+| 10 | Médio | Rio Grande do Sul | CEEE-T + cortejo GWM sem captura | T-240 |
+| 11 | Médio | RS · ES · Ranking | Par de controle + CEBC | T-240–242 |
+| 12 | Consolidação | Síntese v1 | KPIs ~R$81bi · 9+ UFs | T-233 |
+| 13 | Legislativo | PL 2.780/2024 | FGAM R$ 2 bi | T-235 |
+| 14 | Transversal | Braço Jurídico | STF, marco temporal, ADI 7919 | T-234 |
+| 15 | Fechamento | Síntese final | Tipologia confirma/enfraquece/contraria | T-243 |
+| 16 | Controle | Amapá | Amazonbai + Chevron/CNPC federal | T-244 |
+| 17 | Alto | Rio de Janeiro | Açu/CMPort + Castro/Hikvision | T-245 |
 
-**URL base dos dossiês:** `https://odragaoeaonca.vercel.app`
+**URL base dos dossiês:** `https://odragaoeaonca.vercel.app`  
+**Catálogo + prompts hero:** [`CATALAGO.md`](CATALAGO.md)
 
 ---
 
@@ -67,13 +73,19 @@ Publicar nesta sequência (≤2 posts/dia). **Eixos transversais primeiro** → 
 | 6 | Bahia | `artigos/bahia-xarticle.md` | `artigos/bahia-xarticle-hero.png` | `dragao-onca-bahia.html` |
 | 7 | Pará | `artigos/para-xarticle.md` | `public/dragao-onca-para.webp` | `dragao-onca-para.html` |
 | 8 | Amazonas | `artigos/amazonas-xarticle.md` | `public/dragao-onca-amazonas.webp` | `dragao-onca-amazonas.html` |
-| 9 | Paraná | `artigos/parana-xarticle.md` | `public/dragao-onca-parana.webp` | `dragao-onca-parana.html` |
-| 10 | RS · ES · Ranking | `artigos/rs-es-ranking-xarticle.md` | `public/dragao-onca-rs-es.webp` | `dragao-onca-rs-es-ranking-nacional.html` |
-| 11 | Síntese v1 | `artigos/sintese-xarticle.md` | `public/dragao-onca-sintese.webp` | `dragao-onca-sintese.html` |
-| 12 | PL 2.780 | `artigos/pl2780-xarticle.md` | `public/dragao-onca-pl2780.webp` | `dragao-onca-pl2780.html` |
-| 13 | Braço Jurídico | `artigos/braco-juridico-xarticle.md` | `public/dragao-onca-braco-juridico.webp` | `dragao-onca-braco-juridico.html` |
+| 9 | Paraná | `artigos/parana-xarticle.md` | `artigos/parana-xarticle-hero.png` | `dragao-onca-parana.html` |
+| 10 | Rio Grande do Sul | `artigos/rio-grande-do-sul-xarticle.md` | `public/dragao-onca-rio-grande-do-sul.webp` | `dragao-onca-rio-grande-do-sul.html` |
+| 11 | RS · ES · Ranking | `artigos/rs-es-ranking-xarticle.md` | `artigos/rs-es-ranking-xarticle-hero.png` | `dragao-onca-rs-es-ranking-nacional.html` |
+| 12 | Síntese v1 | `artigos/sintese-xarticle.md` | `artigos/sintese-xarticle-hero.png` | `dragao-onca-sintese.html` |
+| 13 | PL 2.780 | `artigos/pl2780-xarticle.md` | `public/dragao-onca-pl2780.webp` | `dragao-onca-pl2780.html` |
+| 14 | Braço Jurídico | `artigos/braco-juridico-xarticle.md` | `public/dragao-onca-braco-juridico.webp` | `dragao-onca-braco-juridico.html` |
+| 15 | Síntese final | `artigos/sintese-final-xarticle.md` | `artigos/sintese-final-xarticle-hero.png` | `dragao-onca-sintese-final-cross-state.html` |
+| 16 | Amapá | `artigos/amapa-xarticle.md` | `artigos/amapa-xarticle-hero.png` | `dragao-onca-amapa.html` |
+| 17 | Rio de Janeiro | `artigos/rj-xarticle.md` | `artigos/rj-xarticle-hero.png` | `dragao-onca-rj.html` |
 
-**Sem X Article ainda:** `dragao-onca-sintese-final-cross-state.html` (T-243) — gerar a partir do HTML quando publicar.
+**Total:** 18 X Articles · **UFs:** SP · GO · MG · BA · PA · AM · PR · RS · ES (via ranking) · AP · RJ
+
+Prompts completos de hero (base + capítulo): [`CATALAGO.md`](CATALAGO.md).
 
 ---
 
@@ -141,7 +153,7 @@ Fluxo: **tweet de abertura** (sem URL externa) → **primeiro reply** (dossiê +
 
 **Tweet de abertura:**
 
-> 16 dossiês. 9 UFs. 4 eixos transversais.
+> 17 dossiês. 10 UFs. 4 eixos transversais.
 >
 > Pequim assina MoUs. Brasília eleva a relação. Mas quem assina o contrato, enfrenta a comunidade e leva o crédito eleitoral é o governador estadual.
 >
@@ -151,7 +163,7 @@ Fluxo: **tweet de abertura** (sem URL externa) → **primeiro reply** (dossiê +
 
 **Primeiro reply:**
 
-> Dashboard da série (16 dossiês):
+> Dashboard da série (17 dossiês):
 > https://odragaoeaonca.vercel.app/
 >
 > Ordem sugerida: Federal → Diplomático → SP → GO → … → Síntese → PL 2.780 → Jurídico
@@ -312,19 +324,19 @@ Fluxo: **tweet de abertura** (sem URL externa) → **primeiro reply** (dossiê +
 
 **Prompt hero:**
 ```
-[TÍTULO] = Minas: o padrão não é a China
-[CONCEITO] = Sigma Lithium Nasdaq, Vale do Lítio, capital ocidental/coreano, Zema
-[CORES] = azul ocidental #4a9eff
+[TÍTULO] = Minas: Sigma + China paralela
+[CONCEITO] = Sigma Lithium Nasdaq + CRRC/Midea/BYD paralelos, Vale do Lítio, Zema
+[CORES] = azul ocidental #4a9eff + vermelho dragão
 ```
 
 **Tweet de abertura:**
 
-> Minas quebra a tese de que o padrão é só China.
+> Minas não é “sem China”.
 >
 > Sigma Lithium na Nasdaq. R$ 3 bi no Jequitinhonha. Mina parada 5 meses depois do lançamento.
-> Zema abandonou o lítio quando as pesquisas não colaboraram.
+> Em paralelo: CRRC, Midea, BYD — vitrine ocidental com presença chinesa.
 >
-> Capítulo de contraste. Artigo abaixo.
+> Artigo abaixo.
 
 **Primeiro reply:**
 
@@ -333,7 +345,7 @@ Fluxo: **tweet de abertura** (sem URL externa) → **primeiro reply** (dossiê +
 >
 > Zema pivotou para o STF. Caiado manteve terras raras. Qual estratégia de descarte de ativo você monitora em 2026?
 
-**Janela 30 min:** rebater leituras “anti-China”.
+**Janela 30 min:** P09 + China paralela; rebater leituras “MG sem China”.
 
 ---
 
@@ -442,7 +454,7 @@ Fluxo: **tweet de abertura** (sem URL externa) → **primeiro reply** (dossiê +
 
 **Título:** *Paraná: acordos gêmeos na China — estado e união, dois dias de diferença*
 
-**Arquivos:** `artigos/parana-xarticle.md` · `public/dragao-onca-parana.webp` · `dragao-onca-parana.html`
+**Arquivos:** `artigos/parana-xarticle.md` · `artigos/parana-xarticle-hero.png` · `dragao-onca-parana.html`
 
 **Prompt hero:**
 ```
@@ -471,11 +483,47 @@ Fluxo: **tweet de abertura** (sem URL externa) → **primeiro reply** (dossiê +
 
 ---
 
-### 10. RS · ES · Ranking CEBC
+### 10. Rio Grande do Sul (T-240)
+
+**Título:** *Rio Grande do Sul: vendeu a rede elétrica à China e perdeu a fábrica GWM*
+
+**Arquivos:** `artigos/rio-grande-do-sul-xarticle.md` · `public/dragao-onca-rio-grande-do-sul.webp` · `dragao-onca-rio-grande-do-sul.html`
+
+**Prompt hero:**
+```
+[TÍTULO] = RS: CEEE-T ≠ GWM
+[CONCEITO] = torres State Grid/CPFL à esquerda; fábrica GWM perdida para Aracruz à direita; Leite Shenzhen
+[CORES] = roxo controle #b07aff + vermelho derrota
+```
+
+**Tweet de abertura:**
+
+> 2021: Leite vende 66% da CEEE-T à CPFL/State Grid — R$ 2,67 bi. Rede gaúcha sob cadeia chinesa.
+>
+> 2024–26: RS Day em Pequim, missão em Shenzhen, 230 ha para a GWM.
+>
+> A GWM escolheu Aracruz (ES). Captura energética ≠ vitória industrial.
+>
+> Artigo abaixo.
+
+**Primeiro reply:**
+
+> Dossiê dedicado:
+> https://odragaoeaonca.vercel.app/dragao-onca-rio-grande-do-sul.html
+>
+> IDs 1735–1737, 1749 (GWM) · T-240
+>
+> Par composto com ES: Cap. 11 (ranking).
+
+**Janela 30 min:** CEEE-T ≠ GWM; não reduzir RS a “diplomacia perdida”.
+
+---
+
+### 11. RS · ES · Ranking CEBC
 
 **Título:** *RS perdeu, ES ganhou — e o ranking CEBC explica por que diplomacia não basta*
 
-**Arquivos:** `artigos/rs-es-ranking-xarticle.md` · `public/dragao-onca-rs-es.webp` · `dragao-onca-rs-es-ranking-nacional.html`
+**Arquivos:** `artigos/rs-es-ranking-xarticle.md` · `artigos/rs-es-ranking-xarticle-hero.png` · `dragao-onca-rs-es-ranking-nacional.html`
 
 **Prompt hero:**
 ```
@@ -501,46 +549,48 @@ Fluxo: **tweet de abertura** (sem URL externa) → **primeiro reply** (dossiê +
 >
 > US$ 85,5 bi · 355 projetos · SP líder com 151
 >
-> Próximo estado a documentar: SC, RJ ou MA?
+> Dossiê RS (CEEE-T): Cap. 10 · RJ (Açu + Castro): Cap. 17
 
-**Janela 30 min:** explicar que ranking histórico ≠ vitória pontual; par de controle metodológico.
+**Janela 30 min:** ranking histórico ≠ vitória pontual; par de controle metodológico.
 
 ---
 
-### 11. Síntese v1
+### 12. Síntese v1
 
-**Título:** *Soberania na conta do governador: o que 5 capítulos revelam juntos*
+**Título:** *Soberania na conta do governador: onde a tese confirma, enfraquece e falha*
 
-**Arquivos:** `artigos/sintese-xarticle.md` · `public/dragao-onca-sintese.webp` · `dragao-onca-sintese.html`
+**Arquivos:** `artigos/sintese-xarticle.md` · `artigos/sintese-xarticle-hero.png` · `dragao-onca-sintese.html`
 
 **Prompt hero:**
 ```
 [TÍTULO] = Soberania na conta do governador
-[CONCEITO] = quadro comparativo 4 governadores, KPIs cross-estaduais, alertas críticos
+[CONCEITO] = mapa Brasil fragmentado 9+ UFs, confirma/enfraquece/falha, KPIs CEBC
 [CORES] = roxo síntese #b07aff
 ```
 
 **Tweet de abertura:**
 
-> 5 capítulos. 4 governadores. 5 blocos geopolíticos.
+> 9+ estados. ~R$ 81 bi rastreados. A tese da série sobrevive — com nuance.
 >
-> Caiado, Barbalho, Wilson Lima, Zema — mesma sequência:
-> negociar → excluir comunidade → converter ativo em campanha.
+> Confirma em PA, AM, GO. Enfraquece em SP e PR. Cai na Bahia (TIR↓) e no par RS/ES (CEEE-T ≠ GWM).
 >
-> Síntese v1 (GO, PA, AM, MG + federal). Artigo abaixo.
+> Síntese v1. Artigo abaixo.
 
 **Primeiro reply:**
 
 > Dossiê interativo:
 > https://odragaoeaonca.vercel.app/dragao-onca-sintese.html
 >
-> Síntese final (9 UFs): https://odragaoeaonca.vercel.app/dragao-onca-sintese-final-cross-state.html
+> Tipologia completa (T-243):
+> https://odragaoeaonca.vercel.app/dragao-onca-sintese-final-cross-state.html
+>
+> Qual caso muda mais a sua leitura — Bahia, São Paulo ou RS/ES?
 
-**Janela 30 min:** reforçar tese “nenhum vetor chega ao beneficiário final”; indicar síntese final T-243.
+**Janela 30 min:** reforçar confirma/enfraquece/contraria; apontar T-243; evitar CTA genérico.
 
 ---
 
-### 12. PL 2.780/2024
+### 13. PL 2.780/2024
 
 **Título:** *PL 2.780/2024: R$ 2 bi para o investidor, zero para a comunidade — e o INESC confirma Goiás*
 
@@ -577,7 +627,7 @@ Fluxo: **tweet de abertura** (sem URL externa) → **primeiro reply** (dossiê +
 
 ---
 
-### 13. Braço Jurídico
+### 14. Braço Jurídico
 
 **Título:** *Braço Jurídico: a arquitetura legal que viabiliza os capítulos estaduais*
 
@@ -614,7 +664,111 @@ Fluxo: **tweet de abertura** (sem URL externa) → **primeiro reply** (dossiê +
 
 ---
 
-## Calendário sugerido (14 dias)
+### 15. Síntese final (T-243)
+
+**Título:** *Soberania na conta do governador — testada em 9 estados*
+
+**Arquivos:** `artigos/sintese-final-xarticle.md` · `artigos/sintese-final-xarticle-hero.png` · `dragao-onca-sintese-final-cross-state.html`
+
+**Prompt hero:**
+```
+[TÍTULO] = Soberania na conta do governador — 9 estados
+[CONCEITO] = mapa fragmentado confirma/enfraquece/contraria, tipologias 0–7, fechamento T-243
+[CORES] = roxo #b07aff + dragão #d4342c + onça #e8b23d
+```
+
+**Tweet de abertura:**
+
+> 9 estados. ~R$ 81 bi. Oito mecanismos — não um script.
+>
+> MG não é “sem China”. RS vendeu a rede à State Grid e ainda perdeu a GWM.
+> Bahia baixou a TIR chinesa. PA e AM ainda sangram no padrão original.
+>
+> Fechamento tipológico da série. Artigo abaixo.
+
+**Primeiro reply:**
+
+> Dossiê T-243:
+> https://odragaoeaonca.vercel.app/dragao-onca-sintese-final-cross-state.html
+>
+> Espelho KPIs (síntese v1):
+> https://odragaoeaonca.vercel.app/dragao-onca-sintese.html
+>
+> Controles posteriores: Amapá (Cap. 16) · RJ (Cap. 17)
+
+**Janela 30 min:** tipologias 6–7 (CEEE-T; vitrine+China); evitar “o que você acha?”.
+
+---
+
+### 16. Amapá (T-244)
+
+**Título:** *No Amapá, a cooperativa vende o açaí — e Pequim licita petróleo sem o governador na mesa*
+
+**Arquivos:** `artigos/amapa-xarticle.md` · `artigos/amapa-xarticle-hero.png` · `dragao-onca-amapa.html`
+
+**Prompt hero:**
+```
+[TÍTULO] = Amapá: açaí e Margem Equatorial
+[CONCEITO] = cooperativa Amazonbai vs. leilão ANP Chevron/CNPC, controle + federal
+[CORES] = verde controle #3ecb6f + azul federal #4a9eff
+```
+
+**Tweet de abertura:**
+
+> Cap. 16 não confirma a tese — de propósito.
+>
+> Amazonbai vende 15 mil t de açaí direto à China. Chevron/CNPC leva 9 blocos na Foz (R$582mi) sem o governador na mesa.
+>
+> Controle metodológico + captura federal. Artigo abaixo.
+
+**Primeiro reply:**
+
+> Dossiê interativo:
+> https://odragaoeaonca.vercel.app/dragao-onca-amapa.html
+>
+> IDs 1757–1759 · T-244
+>
+> GACC do açaí ou licenciamento dos blocos CNPC: qual lacuna fechar primeiro?
+
+**Janela 30 min:** diferenciar açaí (controle) de petróleo (federal); não confundir com FZA-M-59.
+
+---
+
+### 17. Rio de Janeiro (T-245)
+
+**Título:** *Rio de Janeiro: o terminal estratégico de US$ 714 milhões e a vigilância sob sanção na conta do governador*
+
+**Arquivos:** `artigos/rj-xarticle.md` · `artigos/rj-xarticle-hero.png` · `dragao-onca-rj.html`
+
+**Prompt hero:**
+```
+[TÍTULO] = RJ: Açu + vigilância
+[CONCEITO] = Porto do Açu / CMPort 70% US$714mi à esquerda; Hikvision / missão Castro Pequim à direita
+[CORES] = azul portuário #4a9eff + vermelho alerta vigilância
+```
+
+**Tweet de abertura:**
+
+> CMPort compra 70% do terminal de petróleo do Açu — US$ 714 mi. ~30% do petróleo exportado pelo Brasil.
+>
+> No mesmo ciclo, Castro assina Hikvision/Dahua em Pequim — vigilância sob sanção EUA para 92 municípios.
+>
+> Captura federal/mercado + soberania na conta do governador. Artigo abaixo.
+
+**Primeiro reply:**
+
+> Dossiê interativo:
+> https://odragaoeaonca.vercel.app/dragao-onca-rj.html
+>
+> IDs 1760–1762 · T-245
+>
+> Açu/CMPort ou contratos Hikvision: qual frente abrir primeiro?
+
+**Janela 30 min:** separar Açu (mercado/federal) de Castro/Hikvision (P09); ponte com PR (CMPort/TCP).
+
+---
+
+## Calendário sugerido (≤2 posts/dia · ~18 dias)
 
 | Dia | Artigo | Motivo |
 |----:|--------|--------|
@@ -623,15 +777,19 @@ Fluxo: **tweet de abertura** (sem URL externa) → **primeiro reply** (dossiê +
 | 2 | Braço Diplomático | Eixo federal atual (WAICO + terras raras) |
 | 3 | São Paulo | #1 CEBC, variante mercado |
 | 4 | Goiás | Pivô geopolítico + eleição 2026 |
-| 5 | Minas Gerais | Contraste ocidental |
-| 6 | Bahia | Caso de controle metodológico |
+| 5 | Minas Gerais | Sigma + China paralela |
+| 6 | Bahia | Caso de controle (TIR↓) |
 | 7 | Pará | Densidade máxima |
 | 8 | Amazonas | Gravidade máxima (MPF/PF) |
 | 9 | Paraná | Coordenação estado–união |
-| 10 | RS · ES · Ranking | Dados transversais CEBC |
-| 11 | Síntese v1 | Consolidação parcial |
-| 12 | PL 2.780 | Urgência legislativa |
-| 13 | Braço Jurídico | Fechamento arquitetural |
+| 10 | Rio Grande do Sul | CEEE-T ≠ GWM |
+| 11 | RS · ES · Ranking | Dados transversais CEBC |
+| 12 | Síntese v1 | Consolidação parcial |
+| 13 | PL 2.780 | Urgência legislativa |
+| 14 | Braço Jurídico | Arquitetura legal |
+| 15 | Síntese final | Tipologia T-243 |
+| 16 | Amapá | Controle + captura federal |
+| 17 | Rio de Janeiro | Açu + Castro/Hikvision |
 
 ---
 
@@ -648,12 +806,14 @@ Fluxo: **tweet de abertura** (sem URL externa) → **primeiro reply** (dossiê +
 
 ## Corpus e metodologia
 
-- **Dossiês HTML:** 16 · **X Articles:** 14 (+ T-243 pendente)
-- **Entradas:** 126 posts Jekyll · 110 entradas lawfare.json · IDs 1639–1748
+- **Dossiês HTML:** 17 (+ hub) · **X Articles:** 18 (índice 0–17)
+- **Entradas:** ~142 posts · IDs 1639–1762 · temáticas **T-228 → T-245**
 - **CEBC abr/2026:** US$ 85,5 bi · 355 projetos · ranking por UF
 - **Níveis de evidência:** `ev-confirmed` · `ev-alleged` · `ev-inference` · `lacuna_investigativa`
 - **Padrões:** P05 · P09 · P10 · P04b · P11 (ranking/mercado)
-- **Atualização:** jul/2026
+- **Qualidade de artefato (benchmark Bahia):** `docs/qualidade-artefato-referencia.md` — checklist + prompts para capítulos ≥ T-237
+- **Catálogo + prompts hero:** [`CATALAGO.md`](CATALAGO.md)
+- **Atualização:** 27/jul/2026
 
 ---
 
@@ -661,4 +821,4 @@ Fluxo: **tweet de abertura** (sem URL externa) → **primeiro reply** (dossiê +
 
 Conteúdo em **domínio público (CC0)**. Citar a série *O Dragão e a Onça* / *lawfare-timeline*.
 
-Para novos X Articles: ler dossiê HTML → formatar `.md` → gerar hero 1024×600 (prompt acima) → salvar em `artigos/[slug]-xarticle.md` + hero.
+Para novos X Articles: ler dossiê HTML → formatar `.md` → gerar hero 1024×600 ([`CATALAGO.md`](CATALAGO.md) ou prompt base acima) → salvar em `artigos/[slug]-xarticle.md` + hero → atualizar índice neste README e no catálogo.
