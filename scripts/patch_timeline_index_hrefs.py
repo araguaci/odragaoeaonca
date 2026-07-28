@@ -21,6 +21,7 @@ repls = {
     "../dragao-onca-sintese-final-cross-state.html": "./timeline-sintese-final.html",
     "../dragao-onca-amapa.html": "./timeline-amapa.html",
     "../dragao-onca-rj.html": "./timeline-rj.html",
+    "../dragao-onca-santa-catarina.html": "./timeline-santa-catarina.html",
 }
 for a, b in repls.items():
     t = t.replace(f'href="{a}"', f'href="{b}"')
@@ -28,6 +29,16 @@ t = t.replace(
     "Cards apontam ao dossiê HTML",
     "Cards apontam à timeline condensada (dossiê no topo de cada página)",
 )
-t = t.replace("<b>17</b> dossiês HTML</span>", "<b>17</b> timelines + dossiês</span>")
+# Contagens alinhadas a README 0–18
+t = t.replace("<b>18</b> artefatos</span>", "<b>19</b> artefatos</span>")
+t = t.replace("<b>17</b> timelines + dossiês</span>", "<b>18</b> timelines + dossiês</span>")
+t = t.replace("<b>17</b> dossiês HTML</span>", "<b>18</b> timelines + dossiês</span>")
+t = t.replace("<b>11</b> UFs</span>", "<b>12</b> UFs</span>")
+t = t.replace("T-228 → T-245", "T-228 → T-246")
+t = t.replace("IDs <b>1639–1762</b>", "IDs <b>1639–1770</b>")
+t = t.replace("0→17 · deep-link estável", "0→18 · deep-link estável")
+t = t.replace("ordem de importância (0–17)", "ordem de importância (0–18)")
+t = t.replace("Mesma ordem 0–17.", "Mesma ordem 0–18.")
+t = t.replace("README 0–17", "README 0–18")
 p.write_text(t, encoding="utf-8")
 print("updated", p)

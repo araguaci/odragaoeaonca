@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "timeline"
 
-# Ordem de importância (README 0–17) — hub fica só no index
+# Ordem de importância (README 1–18) — hub (0) fica só no timeline/index.html
 CHAPTERS = [
     {
         "ordem": 1,
@@ -204,7 +204,7 @@ CHAPTERS = [
         "patterns": "P04b · P05 · P11",
         "badge": "T-243 · Tipologia final",
         "headline": "Confirma / enfraquece / contraria",
-        "blurb": "Fechamento tipológico · 10 mecanismos · 11 estados.",
+        "blurb": "Fechamento tipológico · 10 mecanismos · 12 estados.",
     },
     {
         "ordem": 16,
@@ -231,6 +231,19 @@ CHAPTERS = [
         "badge": "T-245 · Açu + vigilância",
         "headline": "Porto do Açu + Castro × Hikvision",
         "blurb": "CMPort US$714 mi e vigilância sob sanção — IDs 1760–1762.",
+    },
+    {
+        "ordem": 18,
+        "slug": "timeline-santa-catarina",
+        "src": "dragao-onca-santa-catarina.html",
+        "tid": "T-246",
+        "flag": "🇧🇷 SC",
+        "short": "Santa Catarina",
+        "anchor": "santa-catarina",
+        "patterns": "P05 · P10 · controle",
+        "badge": "T-246 · Cortejo duplo sem captura",
+        "headline": "JMEV: Alesc × ES, fábrica zero",
+        "blurb": "Cortejo legislativo + ferrovias exploratórias — nem SC nem ES confirmam planta até mar/2026.",
     },
 ]
 
@@ -327,6 +340,23 @@ def extract_tlis(src: str) -> list[tuple[str, str, str]]:
     ):
         date = strip_tags(m.group(1))
         title = strip_tags(re.sub(r'<span class="tag[^"]*">.*?</span>', "", m.group(2)))
+        desc = strip_tags(m.group(3))
+        if title:
+            items.append((date, title, desc))
+    return items
+
+
+def extract_tlitems(src: str) -> list[tuple[str, str, str]]:
+    """Formato .tlitem / .tldate / .tltitle (ex.: Santa Catarina)."""
+    items = []
+    for m in re.finditer(
+        r'<div class="tlitem">\s*<span class="tldate">(.*?)</span>(?:<span class="tlid">.*?</span>)?\s*'
+        r'<div class="tltitle">(.*?)</div>\s*<div class="tldesc">(.*?)</div>',
+        src,
+        re.S,
+    ):
+        date = strip_tags(m.group(1))
+        title = strip_tags(m.group(2))
         desc = strip_tags(m.group(3))
         if title:
             items.append((date, title, desc))
@@ -488,6 +518,8 @@ def render(ch: dict) -> str:
     src = src_path.read_text(encoding="utf-8")
     kpis = extract_kpis(src)
     items = extract_tlis(src)
+    if not items:
+        items = extract_tlitems(src)
     if not items:
         items = extract_timeline_items(src)
     if not items:
