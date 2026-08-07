@@ -24,3 +24,14 @@ package-lock.json
 assets/js/dist
 
 .vercel
+
+# Secrets / API
+.env
+.env.local
+.env.*.local
+
+# Firecrawl cache
+.firecrawl/
+
+# Espelho bruto da API (não canônico)
+artigos/_published/
