@@ -27,14 +27,13 @@ Inventário alinhado aos arquivos no disco (06/ago/2026).
 | Capas webp | Pronto | 19 capas de capítulo em `public/dragao-onca*.webp` (+ extras: `espirito-santo`, `pr`, `ranking-cebc`, `soberania`, `rs-es`) |
 | Hero PNG 1024×600 | Parcial | Só `artigos/santa-catarina-xarticle-hero.png`; demais capítulos usam capa `.webp` ou regenerar via [`CATALAGO.md`](CATALAGO.md) |
 | Timelines | Pronto | `timeline/index.html` + 18× `timeline/timeline-*.html` |
-| Favicon atual | Pronto | `favicon.ico` · `favicon.svg` (geométrico) · `apple-touch-icon.png` — wired em `odragaoeaonca.html`; `index.html` só `.ico` |
-| Pack PWA emblema | Prompt pronto | Sem `public/icons/`, sem `manifest.webmanifest` — ver [Ícones PWA](#ícones-pwa) |
+| Favicon / PWA | Pronto | Fonte `public/Gemini_Generated_Transparent.png` → `favicon.ico` · `apple-touch-icon.png` · `public/icons/*` · `manifest.webmanifest` — links em 39 HTML |
 | Pipeline | Pronto | `scripts/run_series_pipeline.py` (+ generate / series-nav / patch) |
 | Promoção X | Pronto | planos neste README + `promo/x-posts-promocao.md` |
 | Catálogo / changelog | Pronto | [`CATALAGO.md`](CATALAGO.md) · [`changelog.md`](changelog.md) |
 | Qualidade | Pronto | `docs/qualidade-artefato-referencia.md` |
 
-**Pendências operacionais:** preencher `.env` e rodar gap analysis X Articles; gerar pack PWA (emblema) + `manifest.webmanifest`; opcional regenerar heroes PNG 1024×600 em `artigos/`; ligar `favicon.svg` / apple-touch também no `index.html`.
+**Pendências operacionais:** opcional regenerar heroes PNG 1024×600 em `artigos/`; regenerar ícones com `python scripts/generate_pwa_icons.py` se a arte fonte mudar.
 
 ---
 
@@ -45,7 +44,7 @@ odragaoeaonca/
 ├── artigos/                    # 19 X Articles canônicos (+ 2 *-old.md) · 1 hero PNG
 ├── artigos/publication-status.md  # Gap locais vs X publicados (fetch_x_articles.py)
 ├── public/                     # Capas webp (19+ extras) + relatórios MD estaduais
-├── public/icons/               # (ainda não criado) pack PWA any/maskable
+├── public/icons/               # Pack PWA (any + maskable) gerado do emblema Gemini
 ├── docs/                       # Dossiês-fonte, qualidade-artefato, notas
 ├── timeline/                   # Hub + 18 timelines condensadas
 ├── scripts/                    # Pipeline series-nav + timeline + fetch_x_articles.py
@@ -53,17 +52,18 @@ odragaoeaonca/
 ├── CATALAGO.md                 # Índice + prompts hero por capítulo
 ├── changelog.md                # Histórico de fontes
 ├── dragao-onca-*.html          # 18 dossiês interativos
-├── favicon.ico / favicon.svg   # Tab + SVG geométrico (raiz) — pronto
-├── apple-touch-icon.png        # iOS 180×180 (raiz) — pronto
+├── favicon.ico                 # Tab 16/32/48 (raiz) — emblema Gemini
+├── apple-touch-icon.png        # iOS 180×180 (raiz)
+├── manifest.webmanifest        # PWA (theme #080c10)
 ├── index.html                  # Hub / dashboard
-├── odragaoeaonca.html          # Entrada espelho (ícones completos)
+├── odragaoeaonca.html          # Entrada espelho
 └── vercel.json                 # Deploy estático (@vercel/static)
 ```
 
 **Índice inteligente (âncoras):** [`timeline/`](timeline/) — ordem 0–18; deep-links `timeline/#amapa`, `timeline/#rj`, `timeline/#santa-catarina`.  
 **Timelines condensadas:** `timeline/timeline-{slug}.html` (geradas de `dragao-onca-*.html`).  
 **Pipeline:** `python scripts/run_series_pipeline.py` → series-nav nos dossiês + regenera `timeline/` + patch do hub.  
-**Ícones PWA:** favicon geométrico no ar; emblema + pack `public/icons/` ainda a gerar ([Ícones PWA](#ícones-pwa)).
+**Ícones PWA:** `python scripts/generate_pwa_icons.py` ← `public/Gemini_Generated_Transparent.png` ([Ícones PWA](#ícones-pwa)).
 
 ---
 
@@ -883,9 +883,10 @@ Fluxo: **tweet de abertura** (sem URL externa) → **primeiro reply** (dossiê +
 
 ## Ícones PWA
 
-**Status:** favicon geométrico **pronto** na raiz (`favicon.ico`, `favicon.svg`, `apple-touch-icon.png`). Pack emblema PWA (`public/icons/` + `manifest.webmanifest`) **ainda não gerado** — só o prompt abaixo.
+**Status:** pack **gerado** a partir de [`public/Gemini_Generated_Transparent.png`](public/Gemini_Generated_Transparent.png) (emblema dragão×onça).  
+Regenerar: `python scripts/generate_pwa_icons.py` · religar HTML: `python scripts/patch_pwa_icon_links.py`.
 
-Conceito do pack: **emblema simbólico** — silhuetas estilizadas de dragão e onça em contraste vermelho/dourado, legível a 48px. Não usar realismo fotográfico da capa `public/dragao-onca.webp`; o `favicon.svg` atual é referência de paleta, não o layout final do emblema.
+Fonte: ilustração circular vermelho/dourado (dragão × onça), composta em canvas `#080c10`. Maskable usa escala ~72% (safe zone). O prompt abaixo permanece como especificação alternativa se a arte for regenerada.
 
 ### Prompt master (gerar 1024×1024)
 
@@ -928,20 +929,18 @@ Gerar o master → exportar / redimensionar com nitidez (não upscale a partir d
 
 | Arquivo | Tamanho | purpose / uso | Estado |
 |---------|---------|----------------|--------|
-| `favicon.ico` | 16 · 32 · 48 (multi) | aba do browser (raiz) | Pronto (geométrico) |
-| `favicon.svg` | vetor | preferido moderno (raiz) | Pronto (geométrico; trocar após emblema) |
+| `favicon.ico` | 16 · 32 · 48 (multi) | aba do browser (raiz) | Pronto |
 | `apple-touch-icon.png` | 180×180 | iOS home screen (raiz) | Pronto |
-| `public/icons/icon-72.png` … `icon-152.png` | 72–152 | any (opcional) | Pendente |
-| `public/icons/icon-192.png` | 192×192 | `manifest` purpose `any` | Pendente |
-| `public/icons/icon-384.png` | 384×384 | any (opcional) | Pendente |
-| `public/icons/icon-512.png` | 512×512 | `manifest` purpose `any` / splash | Pendente |
-| `public/icons/icon-192-maskable.png` | 192×192 | `manifest` purpose `maskable` | Pendente |
-| `public/icons/icon-512-maskable.png` | 512×512 | `manifest` purpose `maskable` | Pendente |
-| `manifest.webmanifest` | — | PWA install | Pendente |
+| `public/icons/icon-32.png` | 32×32 | `<link rel=icon type=png>` | Pronto |
+| `public/icons/icon-72.png` … `icon-152.png` | 72–152 | any | Pronto |
+| `public/icons/icon-192.png` / `icon-512.png` | 192 / 512 | `manifest` purpose `any` | Pronto |
+| `public/icons/icon-*-maskable.png` | 192 / 512 | `manifest` purpose `maskable` | Pronto |
+| `public/icons/icon-1024.png` | 1024 | master | Pronto |
+| `manifest.webmanifest` | — | PWA install | Pronto |
 
-**Manifest (exemplo):** `theme_color` / `background_color` = `#080c10`; ícones `any` + `maskable` apontando para `public/icons/…`.
+**Manifest:** [`manifest.webmanifest`](manifest.webmanifest) — `theme_color` / `background_color` = `#080c10`.
 
-**Checklist pós-geração:** master legível a 32px · maskable passa [maskable.app](https://maskable.app) · atualizar `favicon.svg` ao emblema · HTML (`index.html` + dossiês): `<link rel="icon">` + `apple-touch-icon` + `manifest.webmanifest`.
+**Checklist:** validar maskable em [maskable.app](https://maskable.app) · hard-refresh da aba se o `.ico` antigo estiver em cache.
 
 ---
 
@@ -957,9 +956,9 @@ Gerar o master → exportar / redimensionar com nitidez (não upscale a partir d
 - **Padrões:** P05 · P09 · P10 · P04b · P11 (ranking/mercado)
 - **Qualidade de artefato (benchmark Bahia):** `docs/qualidade-artefato-referencia.md` — checklist + prompts para capítulos ≥ T-237
 - **Catálogo + prompts hero:** [`CATALAGO.md`](CATALAGO.md)
-- **Ícones:** favicon geométrico pronto · pack PWA emblema pendente ([acima](#ícones-pwa))
+- **Ícones PWA:** emblema Gemini → [`public/icons/`](public/icons/) + [`manifest.webmanifest`](manifest.webmanifest) ([acima](#ícones-pwa))
 - **X Articles publicados:** gap analysis via [`scripts/fetch_x_articles.py`](scripts/fetch_x_articles.py) → [`artigos/publication-status.md`](artigos/publication-status.md) ([setup](scripts/README-x-articles.md))
-- **Status sync:** 06/ago/2026
+- **Status sync:** 07/ago/2026
 
 ---
 
